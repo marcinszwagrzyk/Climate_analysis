@@ -5,7 +5,7 @@ compared to the average over the reference period  1960–1990
 
 Data downlaoded from IMGW: https://danepubliczne.imgw.pl/
 
-![climate_change](grid.png)
+![climate_change](grid.jpg)
 
 
 
