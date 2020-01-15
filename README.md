@@ -9,6 +9,6 @@ Data downlaoded from IMGW: https://danepubliczne.imgw.pl/
 
 
 
-Tabular data processing made in pandas, [link]
-Geovisualistaions and grid of maps made with Arcpy and Matplotlib [link]
+Tabular data processing made in pandas, [link](https://github.com/marcinszwagrzyk/Climate_analysis/blob/master/Poland_climate_change.ipynb)
+Geovisualistaions and grid of maps made with Arcpy and Matplotlib [link](https://github.com/marcinszwagrzyk/Climate_analysis/blob/master/map_plotting.py)
 
