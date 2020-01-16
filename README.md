@@ -1,8 +1,8 @@
 # Climate change visualisation
 
-![climate_change](grid.jpg)
-
 Data (IMGW) processing and export to SHP made in Pandas and Geopandas [link](https://github.com/marcinszwagrzyk/Climate_analysis/blob/master/Poland_climate_change_monthly.ipynb)
+
+![climate_change](grid.jpg)
 
 
 Geovisualistaions and grid of maps made with Arcpy and Matplotlib [link](https://github.com/marcinszwagrzyk/Climate_analysis/blob/master/map_plotting.py)
