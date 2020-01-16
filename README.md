@@ -2,10 +2,11 @@
 
 Data (IMGW) processing and export to SHP made in Pandas and Geopandas [link](https://github.com/marcinszwagrzyk/Climate_analysis/blob/master/Poland_climate_change_monthly.ipynb)
 
+Geovisualistaions and grid of maps made with Arcpy and Matplotlib [link](https://github.com/marcinszwagrzyk/Climate_analysis/blob/master/map_plotting.py)
+
 ![climate_change](grid.jpg)
 
 
-Geovisualistaions and grid of maps made with Arcpy and Matplotlib [link](https://github.com/marcinszwagrzyk/Climate_analysis/blob/master/map_plotting.py)
 
 
 Maps show the anomaly of mean temperature for each year for meteostations in Poland,
