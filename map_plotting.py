@@ -5,6 +5,7 @@ import math
 import matplotlib.pyplot as plt
 
 lista_miesiecy = [1,2,3,4,5,6,7,8,9,10,11,12]
+#lista_miesiecy = ['test']
 base_folder = r'c:\Users\marci\git\iMGW\output'
 
 for month in lista_miesiecy:
@@ -51,28 +52,32 @@ for month in lista_miesiecy:
     # reklasyfikacja
     for raster in rastry:
         rok = str(raster)[:4]
-        filename_reklas = os.path.join(r"folder_rastry_reklas", str(rok) + ".tif")
+        filename_reklas = os.path.join(folder_rastry_reklas, str(rok) + ".tif")
         arcpy.Reclassify_3d(in_raster=raster, reclass_field="VALUE",
-
-                            remap="-10,0 -4,0 -5;"
-                                  "-4,0 -3,0 -4;"
-                                  "-3,0 -2,0 -3;"
-                                  "-2,0 -1,0 -2;"
-                                  "-1,0 -0,25 -1;"
-                                  "-0,25 0,25 0;"
-                                  "0,25 1,0 1;"
-                                  "1,0 2,0 2;"
-                                  "2,0 3,0 3;"
-                                  "3,0 4,0 4"
-                                  "4,0 5,0 5"
-                                  "folder_shp,0 6,0 6"
-                                  "6,0 7,0 7"
-                                  "7,0 8,0 8"
-                                  "8,0 9,0 9"
-                                  "9,0 10,0 10"
-                                  "10,0 20,0 11",
+                            remap= "-20,0 -9,0 -10;"
+                                   "-9,0 -8,0 -9;"
+                                   "-8,0 -7,0 -8;"
+                                   "-7,0 -6,0 -7;"
+                                   "-6,0 -5,0 -6;"
+                                   "-5,0 -4,0 -5;"
+                                   " -4,0 -3,0 -4;"
+                                   " -3,0 -2,0 -3;"
+                                   " -2,0 -1,0 -2;"
+                                   " -1,0 -0,25 -1;"
+                                   " -0,25 0,25 0;"
+                                   " 0,25 1,0 1;"
+                                   " 1,0 2,0 2;"
+                                   " 2,0 3,0 3;"
+                                   " 3,0 4,0 4;"
+                                   " 4,0 5,0 5;"
+                                   " 5,0 6,0 6;"
+                                   " 6,0 7,0 7;"
+                                   " 7,0 8,0 8;"
+                                   " 8,0 9,0 9;"
+                                   " 9,0 20,0 10",
                             out_raster=filename_reklas,
                             missing_values="DATA")
+
 
     env.workspace = folder_rastry_reklas
     rastry = arcpy.ListRasters()
@@ -101,7 +106,7 @@ for month in lista_miesiecy:
 
     for shp in shps:
         print(shp)
-        in_symbology_layer = r'c:\Users\marci\git\iMGW\shp\wektor_layer.lyr'
+        in_symbology_layer = r'c:\Users\marci\git\iMGW\shp\wektor_layer2.lyr'
         lyr_source = arcpy.mapping.Layer(in_symbology_layer)
         arcpy.mapping.AddLayer(df, lyr_source, "AUTO_ARRANGE")
         addLayer = arcpy.mapping.Layer(shp)
